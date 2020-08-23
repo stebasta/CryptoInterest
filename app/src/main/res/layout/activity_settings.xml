@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Settings">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TXT_avviso" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="50dp"
+            android:textSize="22sp"/>
+    <Button
+            android:text="Rimuovi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BTN_rimuovi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="250dp" android:layout_marginLeft="125dp" android:layout_marginStart="125dp"
+            android:background="@android:color/holo_red_light"/>
+    <Button
+            android:text="Aggiungi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BTN_scrivi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="250dp" android:layout_marginRight="125dp" android:layout_marginEnd="125dp"
+            android:background="@android:color/holo_green_light"/>
+    <Button
+            android:text="Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BTN_ritorno"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/colorPrimary"/>
+    <EditText
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:background="@drawable/textview_border"
+            android:ems="10"
+            android:id="@+id/TXT_num" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="150dp" android:layout_marginLeft="125dp" android:layout_marginStart="125dp"
+            android:singleLine="true" android:textSize="22sp" android:text=" 0.00001234"/>
+    <EditText
+            android:text="BTC"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_border"
+            android:id="@+id/TXT_valuta" app:layout_constraintEnd_toStartOf="@+id/TXT_num"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="150dp" android:inputType="text" android:textSize="22sp"
+            android:enabled="true" android:textAllCaps="true" android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TXT_errore" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="50dp" android:textColor="@android:color/holo_red_light"
+            android:textColorHint="@android:color/holo_red_light" android:textSize="22sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

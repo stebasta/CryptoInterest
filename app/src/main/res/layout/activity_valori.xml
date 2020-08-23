@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Valori">
+
+        <TextView
+                android:id="@+id/TXT_upusdprezzo"
+                android:background="@drawable/textview_border"
+                android:textSize="22sp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="540dp"
+                android:layout_centerHorizontal="true" android:height="27dp"/>
+        <TextView
+                android:id="@+id/TXT_batprezzo"
+                android:background="@drawable/textview_border"
+                android:textSize="22sp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="440dp"
+                android:layout_centerHorizontal="true" android:height="27dp"/>
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/upusd"
+                android:id="@+id/IMG_upusd"
+                android:layout_marginTop="530dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/TXT_upusdprezzo"/>
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/bat"
+                android:id="@+id/IMG_bat"
+                android:layout_marginTop="430dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/TXT_batprezzo"/>
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/xrp"
+                android:id="@+id/IMG_xrp"
+                android:layout_marginTop="330dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/TXT_xrprezzo"/>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottom_navigation"
+                app:itemBackground="@color/colorPrimary"
+                app:itemTextColor="@drawable/selector"
+                app:itemIconTint="@drawable/selector"
+                app:menu="@menu/menu_navigation"
+                android:layout_alignParentBottom="true"/>
+
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/crypto"
+                android:id="@+id/IMG_Market"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+        <TextView
+                android:id="@+id/TXT_btcprezzo"
+                android:background="@drawable/textview_border"
+                android:textSize="22sp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="240dp"
+                android:layout_centerHorizontal="true" android:height="27dp"/>
+
+        <TextView
+                android:id="@+id/TXT_xrprezzo"
+                android:background="@drawable/textview_border"
+                android:textSize="22sp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="340dp"
+                android:layout_centerHorizontal="true" android:height="27dp"/>
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/IMG_btc"
+                android:layout_marginTop="230dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/TXT_btcprezzo" app:srcCompat="@drawable/btc"/>
+
+</RelativeLayout>
